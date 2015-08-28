@@ -2,50 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./dist/css/screen.css">
   <title>Devfest</title>
+  <link rel="stylesheet" href="./dist/css/screen.css">
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <header class="main-header">
-    <figure class="hero-image">
-      <img src="./content/img/logoDevfest.png" alt="Logo" class="hero-image__img">
-    </figure>
-    <p class="main-header__description">
-      El festival de programación donde todos son bienvenidos a dar una charla
-    </p>
+  <div class="wrapper">
+    <div class="container-header">
+      <header class="main-header">
+        <figure class="hero-image">
+          <img src="./dist/img/logoDevfest.png" alt="Logo" class="hero-image__img">
+        </figure>
+        <div class="wrapper-info-header">
+          <p class="main-header__description">
+            El festival de programación donde todos son bienvenidos a dar una charla
+          </p>
 
-    <div class="container-info">
-      <p class="container-info__info">
-        26 de octubre de 2015 | <span class="container-info__info__rutan">Ruta N</span> <span class="container-info__info__place">Medellín, Colombia</span>
-      </p>
-      <a href="" class="container-info__button">
-        <span>Reclama tu entrada</span>
-      </a>
+          <div class="container-info">
+            <p class="container-info__info">
+              26 de octubre de 2015 <span class="container-info__info__ruta-n">Ruta N</span> <span class="container-info__info__place">Medellín, Colombia</span>
+            </p>
+            <a href="" class="container-info__button">
+              <span>Reclama tu entrada</span>
+            </a>
+          </div>
+        </div>
+      </header>
     </div>
-  </header>
-  <section class="devfest-content">
-    <p class="devfest-content__desc">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Perferendis quidem est ipsa officiis atque ullam quibusdam accusamus veniam ab possimus illo,
-      laudantium, sunt et numquam consectetur sapiente laborum, odit! Esse.
-    </p>
-    <form class="suscribe">
-      <input type="text" class="suscribe__input-text">
-      <input type="submit" class="suscribe__submit">
-    </form>
-    <p class="suscribe-info">
-      o escríbenos a <span class="suscribe-info__email">hola@colombia-dev.org</span>
-    </p>
-  </section>
-  <footer class="footer">
-    <p class="footer__text-all">
-      <p class="footer__support">
-        ColombiaDevFest 2015. con el apoyo de <span class="ride-logo icon-logoride"></span> y <span class="rutan-logo"></span>
+    <section class="devfest-content">
+      <p class="devfest-content__desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Perferendis quidem est ipsa officiis atque ullam quibusdam accusamus veniam ab possimus illo,
+        laudantium, sunt et numquam consectetur sapiente laborum, odit! Esse.
       </p>
-      <p class="footer__follow-us">
-        Síguenos en @devfest
+      <form class="suscribe">
+        <input type="text" class="suscribe__input-text">
+        <input type="submit" class="suscribe__submit">
+      </form>
+      <p class="suscribe-info">
+        o escríbenos a <span class="suscribe-info__email">hola@colombia-dev.org</span>
       </p>
-    </p>
-  </footer>
+    </section>
+    <footer class="footer">
+      <p class="footer__text-all">
+        <p class="footer__support">
+          ColombiaDevFest 2015. con el apoyo de <span class="ride-logo icon-logoride"></span> y <span class="rutan-logo"></span>
+        </p>
+        <p class="footer__follow-us">
+          Síguenos en @devfest
+        </p>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
