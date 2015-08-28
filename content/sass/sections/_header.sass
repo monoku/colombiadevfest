@@ -1,0 +1,104 @@
+html, body
+  height: 100%
+  font-family: Bitter
+
+.wrapper
+  display: table
+  height: 100%
+  max-width: 100%
+  width: 100%
+
+.container-header
+  width: 100%
+  margin: 0
+  padding: 0
+  background-color: $color-blue-strong
+  padding-bottom: 4rem
+
+.main-header
+  width: 100%
+  margin: auto
+  max-width: 1200px
+
+.hero-image
+  width: 100%
+  margin: 0
+  padding: 0
+
+.hero-image__img
+  max-width: 100%
+
+.wrapper-info-header
+  padding: 0 7rem
+  color: white
+
+.main-header__description
+  max-width: 60%
+  font-size: 1.9rem
+  font-weight: bolder
+  margin-bottom: 4rem
+
+.container-info
+  display: table
+  width: 100%
+
+.container-info__info,
+.container-info__button
+  display: table-cell
+  width: 50%
+
+.container-info__info
+  width: 60%
+  font-size: 1.2rem
+
+.container-info__info__ruta-n
+  color: $color-yellow
+  font-size: 1.3rem
+  font-weight: bold
+  padding-left: 0.5rem
+  display: inline-block
+  position: relative
+  &:before
+    content: ''
+    height: 100%
+    display: inline-block
+    width: 1px
+    background-color: gray
+    position: absolute
+    left: 0
+
+.container-info__info__place
+  font-size: 0.9rem
+
+.container-info__button
+  max-width: 38%
+  padding: 0.6rem 1.2rem
+  background-color: $color-yellow
+  text-align: left
+  text-decoration: none
+  color: $color-blue-strong
+  font-size: 1.7rem
+  position: relative
+  border-radius: 0.2rem
+  letter-spacing: 2px
+  font-weight: bold
+  &:before
+    content: '\e602'
+    font-family: icomoon
+    position: absolute
+    right: 0.5rem
+    top: calc(50% - 0.8rem)
+    z-index: 2
+
+  &:after
+    content: ''
+    width: 15%
+    height: 100%
+    position: absolute
+    right: 0
+    top: 0
+    background-color: $color-orange
+    border-top-left-radius: 50%
+    border-bottom-left-radius: 50%
+    border-top-right-radius: 0.2rem
+    border-bottom-right-radius: 0.2rem
