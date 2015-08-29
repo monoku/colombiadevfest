@@ -3,43 +3,103 @@
   margin: 0 auto
   padding: 5rem 0 3rem 0
 
+  @media (max-width: 995px)
+    text-align: center
+
+
 .devfest-content
   padding: 0 7rem
 
+  @media (max-width: 850px)
+    padding: 0 4rem
+
+    @media (max-width: 550px)
+      padding: 0 2rem
+
 .devfest-content__desc
   font-size: 1.9rem
-  max-width: 80%
+  max-width: 770px
   color: $color-blue-strong
   //background-image: url(../img/texturatexto.png)
   //-webkit-background-clip: text
 
+  @media (max-width: 995px)
+    margin-left: auto
+    margin-right: auto
+
+  @media (max-width: 850px)
+    font-size: 1.5rem
+
+  @media (max-width: 520px)
+    margin-top: 0
+    font-size: 1.2rem
 
 .suscribe
 
+
 .suscribe__input-text,
 .suscribe__submit
-  max-width: 20rem
-  width: 35%
   padding: 0.5rem
   border-radius: 0.2rem
   font-size: 1.9rem
   padding: 1rem 0
-
+  box-sizing: border-box
 
 .suscribe__input-text
-  max-width: 30rem
-  width: 48%
+  width: 470px
   border: 1px solid gray
   color: gray
+  padding-left: 1em
+  padding-right: 1em
+
+  @media (max-width: 995px)
+    border-radius: 0.2em 0.2em 0 0
+
+  @media (max-width: 850px)
+    font-size: 4vw
+
+  @media (max-width: 520px)
+    font-size: 1.4rem
+
+  @media (max-width: 520px)
+    font-size: 1.2rem
 
 .suscribe__submit
-  border: none
+  width: 290px
+  margin-left: 0.4rem
+  border: 1px solid $color-blue-strong
   background-color: $color-blue-strong
   color: $color-yellow
+
+  @media (max-width: 995px)
+    margin-left: 0
+    border-radius:  0 0 0.2em 0.2em
+
+  @media (max-width: 850px)
+    font-size: 4vw
+
+  @media (max-width: 520px)
+    font-size: 1.4rem
+
+  @media (max-width: 520px)
+    font-size: 1.2rem
+
+.suscribe__input-text,
+.suscribe__submit
+  @media (max-width: 995px)
+    width: 90%
+    display: block
+    margin: 0 auto
 
 .suscribe-info
   font-size: 1.9rem
   color: $color-blue-strong
+
+  @media (max-width: 850px)
+    font-size: 1.5rem
+
+  @media (max-width: 520px)
+    font-size: 1.2rem
 
 .suscribe-info__email
   color: $color-orange
@@ -51,9 +111,8 @@
     content: '\e601'
     font-family: icomoon
     display: inline-block
-    margin-left: 1rem
+    margin-left: 0.8rem
     font-size: 0.8rem
-    position: absolute
     top: 0.8rem
 
 text
