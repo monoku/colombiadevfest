@@ -8,6 +8,23 @@ html, body
   max-width: 100%
   width: 100%
 
+
+.logo
+  background: url('../img/logoDevfest.png') center top no-repeat
+  margin: 0
+  overflow: hidden
+  text-indent: -999em
+  height: 34vw
+  max-width: 1200px
+  max-height: 403px
+  background-size: 100%
+
+  @media (max-width: 650px)
+    margin-bottom: 4rem
+
+  @media (max-width: 370px)
+    margin-bottom: 2rem
+
 .container-header
   width: 100%
   margin: 0
@@ -32,24 +49,62 @@ html, body
   padding: 0 7rem
   color: white
 
+  @media (max-width: 650px)
+    padding: 0 2rem
+    text-align: center
+
+  @media (max-width: 460px)
+    padding: 0 1.4rem
+
+
+
 .main-header__description
-  max-width: 60%
+  max-width: 580px
   font-size: 1.9rem
   font-weight: bolder
   margin-bottom: 4rem
+  letter-spacing: 2px
+
+
+  @media (max-width: 720px)
+    font-size: 3.5vw
+    margin-bottom: 3rem
+
+  @media (max-width: 460px)
+    margin-bottom: 2.5rem
+    font-size: 1.1rem
+
+  @media (max-width: 370px)
+    font-size: 1rem
+    font-weight: 300
 
 .container-info
-  display: table
-  width: 100%
+  +clearfix
+  // display: table
+  // width: 100%
 
 .container-info__info,
 .container-info__button
-  display: table-cell
-  width: 50%
+  // display: table-cell
+  // width: 50%
 
 .container-info__info
-  width: 60%
-  font-size: 1.2rem
+  font-size: 1.3rem
+  letter-spacing: 2px
+  line-height: 2.7rem
+  float: left
+  margin: 0.4em 0 0
+
+
+  @media (max-width: 1150px)
+    float: none
+
+  @media (max-width: 720px)
+    font-size: 3.1vw
+
+  @media (max-width: 460px)
+    font-size: 1rem
+    line-height: 1.4
 
 .container-info__info__ruta-n
   color: $color-yellow
@@ -58,21 +113,33 @@ html, body
   padding-left: 0.5rem
   display: inline-block
   position: relative
+
   &:before
     content: ''
     height: 100%
     display: inline-block
     width: 1px
-    background-color: gray
+    background-color: rgba(255, 255, 255, 0.27)
     position: absolute
     left: 0
 
+  @media (max-width: 460px)
+    &:before
+      display: none
+
+.container-info__info__date
+  @media (max-width: 460px)
+    display: block
+
 .container-info__info__place
-  font-size: 0.9rem
+  font-size: 0.6em
+  letter-spacing: 1px
+
+  @media (max-width: 460px)
+    font-size: 0.9em
 
 .container-info__button
-  max-width: 38%
-  padding: 0.6rem 1.2rem
+  padding: 0.8rem 4.2rem 0.5rem 1.2rem
   background-color: $color-yellow
   text-align: left
   text-decoration: none
@@ -81,7 +148,21 @@ html, body
   position: relative
   border-radius: 0.2rem
   letter-spacing: 2px
-  font-weight: bold
+  font-weight: 300
+  font-size: 1.9rem
+  float: right
+
+  @media (max-width: 1150px)
+    float: none
+    margin-top: 2rem
+    display: inline-block
+
+  @media (max-width: 720px)
+    font-size: 4.1vw
+
+  @media (max-width: 370px)
+    font-size: 0.4rem
+
   &:before
     content: '\e602'
     font-family: icomoon
