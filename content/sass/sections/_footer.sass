@@ -5,11 +5,17 @@
   max-width: 1200px
   margin: 0 auto
   color: $color-blue-light
+  @media (max-width: 440px)
+    font-size: 14px
 
 .container-elements-footer
   padding: 0 7rem
   max-width: 1200px
   font-weight: bold
+  @media (max-width: 650px)
+    padding: 0 2rem
+  @media (max-width: 460px)
+    padding: 0 1.4rem
 
 .footer__text-all
   display: flex
@@ -24,6 +30,7 @@
 
 .footer__support
   width: 50%
+  line-height: 1.7
 
 .footer__follow-us
   text-align: right
