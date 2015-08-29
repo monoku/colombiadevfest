@@ -160,16 +160,27 @@ html, body
   @media (max-width: 720px)
     font-size: 4.1vw
 
+  @media (max-width: 480px)
+    font-size: 5vw
+
   @media (max-width: 370px)
-    font-size: 0.4rem
+    font-size: 4vh
 
   &:before
     content: '\e602'
     font-family: icomoon
     position: absolute
-    right: 0.5rem
-    top: calc(50% - 0.8rem)
+    right: 2.1%
+    top: 50%
     z-index: 2
+    transform: translate3d(0,-50%,0)
+    font-size: 30px
+
+    @media (max-width: 590px)
+      font-size: 25px
+
+    @media (max-width: 480px)
+      font-size: 20px
 
   &:after
     content: ''
@@ -183,3 +194,6 @@ html, body
     border-bottom-left-radius: 50%
     border-top-right-radius: 0.2rem
     border-bottom-right-radius: 0.2rem
+
+    @media (max-width: 300px)
+      width: 20% 
