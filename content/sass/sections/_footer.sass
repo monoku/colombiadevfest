@@ -7,10 +7,16 @@
   color: $color-blue-light
 
 .container-elements-footer
-  padding: 0 14rem
+  padding: 0 7rem
+  max-width: 1200px
+  font-weight: bold
 
 .footer__text-all
-  max-width: 1200px
+  display: flex
+  max-width: calc(1200px - 14rem)
+  margin: auto
+  align-items: baseline
+  letter-spacing: 1px
 
 .footer__support,
 .footer__follow-us
@@ -32,7 +38,7 @@
     color: white
     position: absolute
     top: 0.1rem
-    right: 11.5rem
+    right: 13rem
 
 .ride-logo,
 .rutan-logo
@@ -48,3 +54,14 @@
 
 .rutan-logo
   vertical-align: sub
+
+
+@media screen and (max-width: 770px)
+  .footer__text-all
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+  .footer__follow-us,
+  .footer__support
+    width: auto
