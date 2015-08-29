@@ -1,41 +1,53 @@
 .footer
-  display: table-row
   background-color: $color-blue-strong
-  width: 100%
-  max-width: 1200px
   margin: 0 auto
   color: $color-blue-light
-  @media (max-width: 440px)
-    font-size: 14px
 
 .container-elements-footer
-  padding: 0 7rem
-  max-width: 1200px
-  font-weight: bold
-  @media (max-width: 650px)
-    padding: 0 2rem
-  @media (max-width: 460px)
-    padding: 0 1.4rem
-
-.footer__text-all
+  padding: 0.5rem 0 1.5rem
   display: flex
-  max-width: calc(1200px - 14rem)
-  margin: auto
   align-items: baseline
   letter-spacing: 1px
+  max-width: 980px
+  font-weight: bold
+  margin: auto
+
+  @media (max-width: 1200px)
+    padding: 0.5rem 7rem 1.5rem
+
+  @media (max-width: 1060px)
+    display: block
+    text-align: center
+
+  @media (max-width: 650px)
+    padding: 0.5rem 2rem 1.5rem
+
+  @media (max-width: 460px)
+    padding: 0.5rem 1rem 1.5rem
+
 
 .footer__support,
 .footer__follow-us
   display: inline-block
 
+  @media (max-width: 1060px)
+    display: block
+
 .footer__support
-  width: 50%
   line-height: 1.7
+  flex: 1
 
 .footer__follow-us
   text-align: right
-  width: 48%
   position: relative
+
+  @media (max-width: 1060px)
+    text-align: center
+
+  @media (max-width: 480px)
+    margin-top: 2.5rem
+
+
   a
     color: inherit
     text-decoration: none
@@ -46,6 +58,15 @@
     position: absolute
     top: 0.1rem
     right: 13rem
+
+    @media (max-width: 1060px)
+      position: static
+      margin-right: 0.6rem
+
+    @media (max-width: 480px)
+      position: absolute
+      top: -1.5rem
+      right: calc(50% - 1rem)
 
 .ride-logo,
 .rutan-logo
