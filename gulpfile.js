@@ -12,13 +12,13 @@ gulp.task('dist-sass', function(cb){
     cascade: false
   }))
   // .pipe(cssMin())
-  .pipe(gulp.dest('./dist/css/'))
+  .pipe(gulp.dest('./public/css/'))
   .pipe(browserSync.stream())
 })
 
 gulp.task('watch', function (cb) {
   gulp.watch('content/sass/**/*.sass', ['dist-sass'])
-  gulp.watch('./*.html').on('change', browserSync.reload)
+  gulp.watch('public/*.html').on('change', browserSync.reload)
 })
 
 gulp.task('browser-sync', function(cb) {
