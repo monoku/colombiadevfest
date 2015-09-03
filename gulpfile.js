@@ -11,7 +11,7 @@ gulp.task('dist-sass', function(cb){
     browsers: ['last 40 versions'],
     cascade: false
   }))
-  .pipe(cssMin())
+  // .pipe(cssMin())
   .pipe(gulp.dest('./dist/css/'))
   .pipe(browserSync.stream())
 })

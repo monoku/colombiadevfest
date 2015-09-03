@@ -11,16 +11,16 @@ html, body
 
 .logo
   background: url('../img/logoDevfest.png') center top no-repeat
-  margin: 0
+  margin: 0 auto
   overflow: hidden
   text-indent: -999em
   height: 34vw
-  max-width: 1200px
-  max-height: 403px
+  max-width: 730px
+  max-height: 270px
   background-size: 100%
 
   @media (max-width: 650px)
-    margin-bottom: 4rem
+    margin-bottom: 3rem
 
   @media (max-width: 370px)
     margin-bottom: 2rem
@@ -28,9 +28,11 @@ html, body
 .container-header
   width: 100%
   margin: 0
-  padding: 0
+  padding: 3rem 0 4rem
   background-color: $color-blue-strong
-  padding-bottom: 4rem
+
+  @media (max-width: 370px)
+    padding: 2rem 0 3rem
 
 .main-header
   width: 100%
@@ -67,7 +69,7 @@ html, body
 
 
   @media (max-width: 720px)
-    font-size: 3.5vw
+    font-size: 3.8vw
     margin-bottom: 3rem
 
   @media (max-width: 460px)
@@ -91,45 +93,43 @@ html, body
 .container-info__info
   font-size: 1.3rem
   letter-spacing: 2px
-  line-height: 2.7rem
+  line-height: 1.4
   float: left
-  margin: 0.4em 0 0
+  margin: 0
 
-
-  @media (max-width: 1150px)
+  @media (max-width: 1070px)
     float: none
 
   @media (max-width: 720px)
     font-size: 3.1vw
 
   @media (max-width: 460px)
-    font-size: 1rem
+    font-size: 0.8rem
     line-height: 1.4
 
 .container-info__info__ruta-n
   color: $color-yellow
-  font-size: 1.3rem
+  font-size: 1.2em
   font-weight: bold
-  padding-left: 0.5rem
+  // padding-left: 0.5rem
   display: inline-block
   position: relative
 
-  &:before
-    content: ''
-    height: 100%
-    display: inline-block
-    width: 1px
-    background-color: rgba(255, 255, 255, 0.27)
-    position: absolute
-    left: 0
-
-  @media (max-width: 460px)
-    &:before
-      display: none
+  // &:before
+  //   content: ''
+  //   height: 100%
+  //   display: inline-block
+  //   width: 1px
+  //   background-color: rgba(255, 255, 255, 0.27)
+  //   position: absolute
+  //   left: 0
+  //
+  // @media (max-width: 460px)
+  //   &:before
+  //     display: none
 
 .container-info__info__date
-  @media (max-width: 460px)
-    display: block
+  display: block
 
 .container-info__info__place
   font-size: 0.6em
@@ -144,27 +144,26 @@ html, body
   text-align: left
   text-decoration: none
   color: $color-blue-strong
-  font-size: 1.7rem
+  font-size: 1.4rem
   position: relative
   border-radius: 0.2rem
-  letter-spacing: 2px
+  letter-spacing: 1px
   font-weight: 300
-  font-size: 1.9rem
   float: right
 
-  @media (max-width: 1150px)
+  @media (max-width: 1070px)
     float: none
     margin-top: 2rem
     display: inline-block
 
   @media (max-width: 720px)
-    font-size: 4.1vw
+    font-size: 3.3vw
 
   @media (max-width: 480px)
-    font-size: 5vw
+    font-size: 4.1vw
 
   @media (max-width: 370px)
-    font-size: 4vh
+    font-size: 2.3vh
 
   &:before
     content: '\e602'
