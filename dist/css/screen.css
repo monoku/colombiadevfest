@@ -607,21 +607,25 @@ html, body {
     display: block;
     margin: 0 auto; } }
 
-.suscribe-info,
-.about-col-dev {
+.suscribe-info {
   font-size: 1.9rem;
   color: #1E2843; }
   @media (max-width: 850px) {
-    .suscribe-info,
-    .about-col-dev {
+    .suscribe-info {
       font-size: 1.5rem; } }
   @media (max-width: 520px) {
-    .suscribe-info,
-    .about-col-dev {
+    .suscribe-info {
       font-size: 1.2rem; } }
 
 .about-col-dev {
-  margin-top: 2em; }
+  padding: 3.5rem 2rem 2.1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #2D2D2D;
+  background: #FCF7E7;
+  border-top: 1px solid #F5EDD4; }
+  .about-col-dev img {
+    width: 100px; }
 
 .suscribe-info__email {
   color: #FB9A02;
