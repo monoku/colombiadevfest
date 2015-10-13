@@ -128,3 +128,81 @@
 
 text
   fill: url(#texture)
+
+
+.agenda
+  max-width: 960px
+  margin: auto
+  padding: 0 2rem 5rem
+
+  .table-wrapper
+    overflow: auto
+
+  h2
+    font-size: 2.5rem
+    text-align: center
+    color: $color-blue-strong
+
+  table
+    min-width: 800px
+
+  thead
+    tr
+      th:first-child
+        background: #373D4C
+
+    tr:nth-child(2)
+      th
+        padding-bottom: 1rem
+
+    tr:first-child
+      th
+        padding-top: 1rem
+
+  tr:first-child
+    th:nth-child(3)
+      background: #233D86
+  tr:nth-child(2)
+    th:nth-child(4),
+    th:nth-child(5)
+      background: #233D86
+
+  th
+    background: $color-blue-strong
+    color: white
+    padding: 0.5rem 0.6rem
+    // border: 1px solid #4B5369
+
+
+  td:first-child
+    text-align: right
+
+  td
+    width: 8%
+    border: 1px solid #eee
+    padding: 1.3rem 0.6rem
+    vertical-align: top
+    line-height: 1.4
+
+  td:nth-child(2n)
+    width: 22.5%
+
+  tr:hover
+    td
+      background: #f8f8f8
+
+.special
+  td
+    background: #eee
+
+    &:not(:first-child)
+      font-size: 1.2rem
+
+    &:first-child
+      border-right-color: #DDD
+
+.center
+  text-align: center
+
+.end
+  background: #eee
