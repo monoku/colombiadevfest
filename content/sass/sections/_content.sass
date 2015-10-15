@@ -202,8 +202,49 @@ text
     &:first-child
       border-right-color: #DDD
 
+.agenda__intro
+  text-align: center
+  margin-bottom: 2rem
+  color: #868686
+  font-style: italic
+  margin-top: -1rem
+
 .center
   text-align: center
 
 .end
   background: #eee
+
+.full-description
+  display: none
+  border-top: 1px solid #DDDDDD
+  margin-top: 1rem
+  padding-top: 1rem
+
+  a
+    color: lighten($color-blue-strong, 20%)
+
+.hide-description,
+.show-description
+  display: block
+  margin-top: 1rem
+  // background: #ddd
+  color: #333
+  text-align: center
+  // text-decoration: none
+  padding: 5px 0
+  transition: background-color 0.3s
+  font-size: 0.8rem
+
+
+.show-description
+
+  &:before
+    content: "Ver "
+
+.hide-description
+  // background-color: #777
+
+  &:before
+    content: "Ocultar "
+
